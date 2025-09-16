@@ -33,6 +33,7 @@ server <- function(input, output) {
     generate_story(input$noun1, input$verb, input$adjective, input$adverb, input$verb2)
   })
   output$story <- renderText({
+    cat("This is a message\n")
     story()
   })
 }
